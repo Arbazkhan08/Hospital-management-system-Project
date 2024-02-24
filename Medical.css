@@ -1,0 +1,514 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;;
+    width: 100%;
+    
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 120%;
+    border-radius: 50px;
+    
+}
+
+ul:hover{
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2{
+    margin-top: 80px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 220%;
+}
+p1{
+    font-size: 150%;
+    font-variant-position: normal;
+    display: flex;
+    justify-content: center;
+}
+
+
+header, nav, section {
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid #010000;
+    border-radius:10px;
+    
+}
+
+section {
+    display:none;
+    border-width: 0px;
+    -webkit-text-fill-color: #000000;
+
+}
+
+
+body,nav {
+    font-family: BOLD, sans-serif;
+    justify-content: center;
+    text-align: center;
+
+}
+
+section,nav{
+    
+    padding: 80px;
+
+}
+
+nav,ul,li{
+    color: rgb(0, 255, 17);
+    border: rgb(219, 9, 9);
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 0 0px;
+    cursor: pointer;
+    text-align: right;
+    -webkit-text-fill-color: #000000;    
+}
+
+#loginbtn,#signupbtn{
+    background-color: rgb(0, 255, 208);
+    color: rgb(10, 8, 8);
+    text-decoration: solid;
+    border:none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+#loginbtn:hover,
+#signupbtn:hover{
+    background-color: #45a049;
+}
+
+.form-container {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+
+form button {
+    background-color: #ff0000;
+    color: rgb(255, 17, 17);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+form button:hover {
+    background-color: #010101;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 150%;
+    text-decoration: #fffbfb;
+    background-color: #ff02e1; 
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {
+    -webkit-text-fill-color: #040404;
+    text-align: left;
+    padding: 20px;
+    text-decoration: solid;
+    text-decoration: bold;
+}
+
+.box {
+    width:550px;
+    height: 320px;
+    background-color: #ff00cc;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-text-fill-color: #ffffff;
+    border-radius: 10px; 
+    border:1px solid;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border: 1px black;
+
+}
+
+.box img{
+    margin-top: 5px;
+    width: 330px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.box:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.info-section {
+    display: none;
+    margin-top: 20px;
+    border: 1px rgb(0, 0, 0);
+    border-radius: 5px;   
+    background-color: #0af4ec; 
+    text-align: left;
+    margin-right: 0px;
+    padding: 80px;
+    line-height: 1.5;
+    margin-left: 200px;
+    margin-right: 200px;
+    overflow: auto;
+    white-space: allipsis;
+    font-size: 1.5em;
+
+}
+
+.info-section h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 5px black;
+    padding-left: 40px;
+    -webkit-text-fill-color: #000000;
+    padding: 10px;
+    border-style: red;
+    display: flex;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.doctor-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.appointment-form {
+    background-color: #ff00cc;
+    border: 1px solid #000000;
+    padding: 20px;
+    display: none;
+    position:absolute ;
+    top: 1420px;
+    left:500px;
+    height: 450px;
+}
+
+#appointmentDetails {
+    background-color: #ff00cc;
+    border: 1px solid #000000;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 1420px;
+    left: 950px;
+
+}
+
+p{
+    margin-bottom: 20px;
+}
+.doctor-list {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 2px solid #000000;
+}
+
+.specialties-list {
+    margin-top: 10px;
+   -webkit-text-fill-color: #000000;
+   text-align: center;
+   text-decoration: solid;
+   border-radius: 5px;
+   border-color: #000000;
+}
+
+.doctor-card {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px solid #000000;
+}
+
+.appointment-form input,
+.appointment-form select {
+    margin-bottom: 10px;
+}
+
+.doctor-card button {
+    background-color: #ff00cc;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    -webkit-text-fill-color: white;
+}
+
+.doctor-card button:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(248, 245, 245);
+    border: 2px solid #000000;
+}
+
+#inputForm button {
+    background-color: #ff00cc;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    -webkit-text-fill-color: white;
+}
+
+#inputForm button:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid #4CAF50;
+}
+
+.notification{
+    background-color: #00ffd0;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width: max-content;
+    border-radius: 10px;
+    border-color: #000000;
+    text-decoration: solid;
+    font-weight: bold;
+
+}
+
+.search-container1 {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+#search-box {
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.specialties-list1 {
+
+    font-size: large;
+    font-weight: bold;
+}
+
+.doctor-list1 {
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+
+.appointment-form2 {
+    padding: 10px;
+    align-items: center;
+
+}
+
+
+.notification1 {
+    background-color: #00ffd0;
+}
+
+
+
+
+.Form-container button {
+    background-color: #ff00cc;
+    color: rgb(252, 252, 252);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-text-fill-color: white;
+}
+
+.Form-container button:hover {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    border: 2px solid #f44336;
+}
+
+.table-container {
+    margin: 20px;
+    background-color: #ff00cc;
+}
+
+.table-container:hover{
+    transform: scale(1.05); 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(165, 255, 246);
+}
+
+.review-form {
+    display: none;
+    margin: 20px;
+    background-color: #ff00cc;
+}
+
+main{
+
+    background-color: #00ffe1;
+}
+.blog-posts {
+    padding: 20px;
+    background-color: #ff00cc;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.modal-content {
+    background-color: #ff04de;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: #333;
+    color: white;
+    -webkit-text-fill-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    height:70px;
+    padding: 17px;
+    margin-top: 450px; 
+    position: static;
+}
+
+
+
+
+

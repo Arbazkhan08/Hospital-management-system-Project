@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayHealthy</title>
+    <link rel="stylesheet" href="Medical.css">
+</head>
+
+    <header>
+        <div class="logo">Stay Healthy Services</div>
+    <nav>
+        <ul>    
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#Health blog">Health blog</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+        
+
+            <li><a href="#login" button id="loginbtn">Login</a></li>
+            <li><a href="#Signup" button id="signupbtn">Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<section id="Home">
+    <h2>Your Health<br>Our Responsibility</h2><br><br>
+    <p1>'Embrace the art of self care for a health mind and body the foundation of a vibrant life Wellness is not just a destination; it's a journey of mindful choices and daily transformations, nature
+        your health with love and watch it bloom into a beacon of joy and vitality'.</p1><br><br> 
+    <nav>
+        <ul>
+           <li><a href="#GetStarted" id="getStartedLink"><h1>Get Started</h1></a></li>
+
+        </ul>
+    </nav>
+        <!-- Add this element for displaying notifications -->
+    <div id="notification" class="notification"></div>
+
+</section>
+
+<section id="GetStartedsection" style="display: none;">
+    <h2>Best Services</h2><h3>Love Yourself enouth to live a healthy lifestyle</h3>
+
+<div class="container">
+    <div class="box" id="instantConsultationBox">
+        <img src="Instant.png" alt="Example Image" >
+        <h1>Instant Consultation</h1></a></div>
+
+    <div class="box" id="appointmentBox">
+        <img src="Appointment.jfif" alt="Example Image">
+        <h1>Book an Appointment</h1></a></div>
+    
+    <div class="box" id="selfCheckupBox">
+        <img src="self-checkup.jpg" alt="Example Image"> 
+        <h1>Self Checkup</h1></a></div>
+
+    <div class="box" id="healthTipsBox">
+        <img src="Review.jpg" alt="Example Image"  >
+        <h1>Health Tips & Guidance</h1></a></div>
+</div>   
+
+<section class="info-section" id="instantConsultationInfo">
+    <h2>[Instant Consultation]</h2>
+    <div class="container">
+        <div class="doctor-box" onclick="showAppointmentForm('Dr. Suhana', 'BHMS', '0 years', '4.9')">
+            <h2>Dr. Suhana</h2>
+            <p>Field: BHMS</p>
+            <p>Experience: 0 years</p>
+            <p>Rating: 4.9</p>
+        </div>
+
+        <div class="doctor-box" onclick="showAppointmentForm('Dr. Sana', 'BDS', '0 years', '4.9')">
+            <h2>Dr. Sana</h2>
+            <p>Field: BDS</p>
+            <p>Experience: 0 years</p>
+            <p>Rating: 4.9</p>
+        </div>
+
+        <div class="doctor-box" onclick="showAppointmentForm('Dr. khan', 'Cardiologist', '10 years', '4.9')">
+            <h2>Dr. khan</h2>
+            <p>Field: Cardiologist</p>
+            <p>Experience: 10 years</p>
+            <p>Rating: 4.9</p>
+        </div>
+
+        <!-- Add more doctor boxes here -->
+
+        <div class="appointment-form" id="appointmentForm">
+            <h2>Book an Appointment</h2>
+            <form onsubmit="submitForm(event)">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" required><br>
+                <label for="appointmentDate">Date:</label>
+                <input type="date" id="appointmentDate" required><br>
+                <label for="appointmentTime">Time:</label>
+                <input type="time" id="appointmentTime" required><br>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="cancelAppointment()">Cancel Appointment</button>
+            </form>
+        </div>
+
+        <div id="appointmentDetails"></div>
+    </div>
+
+</section>
+
+    <section class="info-section" id="appointmentInfo">
+    <div class="search-container">
+        <h2>[Book an Appointmen:]</h2>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search for doctors...">
+            <div id="specialties-list" class="specialties-list"></div>
+    </div>   
+        <div class="doctor-list" id="doctor-list"></div>
+        <div class="appointment-form1" id="appointment-form1"></div>
+        <div class="notification" id="notification"></div>
+
+    </section>
+
+    <section class="info-section" id="selfCheckupInfo">
+        <h2>[Self Checkup]</h2><br>
+        <img src="self-checkup00.png" alt="Example Image" >
+
+        <h1>1.Body Tempreature:</h1> Using a thermometer to check for fever, which can indicate infections or other illnesses.
+       
+        <h1>2. Blood Pressure:</h1>  Using a blood pressure monitor to check blood pressure levels. High blood pressure can be a sign of heart problems or hypertension.
+
+        <h1>3. Heart Rate:</h1>  Monitoring pulse rate to ensure it falls within a healthy range. Irregularities might indicate heart issues.
+
+        <h1>4.Breast Self-Examination:</h1>   Checking breasts for lumps, changes in size or shape, or any other abnormalities that could indicate breast cancer.
+
+        <h1>5. Skin Examination: </h1>  Regularly checking moles, freckles, or any other skin changes that might suggest skin cancer.
+
+        <h1>6. Oral Health Check:</h1>  Regularly examining the mouth and gums for signs of cavities, gum disease, or oral cancer.
+
+        <h1>7. Mental Health Check: </h1>  Monitoring one's own mood, stress levels, or changes in behavior that might indicate mental health issues like depression or anxiety.
+
+        <h1>8. Diet and Exercise: </h1>   Monitoring one's own diet and exercise routines to ensure a healthy lifestyle.
+
+        <h1>9. Monitoring Chronic Conditions: </h1>  For individuals with chronic conditions (such as diabetes), self-checkups might involve monitoring blood sugar levels or other specific parameters.
+
+
+    </section>
+
+    <section class="info-section" id="healthTipsInfo">
+        <h1>[Health Tips & Guidance]</h1>
+            Explore valuable health tips and Guidance.
+        <h1>1.Balanced diet</h1>
+          Eat a variety of fruits, vegetables, whole grains, and lean proteins.
+Limit processed foods, sugary drinks, and excessive amounts of caffeine.
+Control portion sizes to maintain a healthy weight.
+
+        <h1>2. Regular Exercise:</h1>Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity per week.
+            Include strength training exercises at least twice a week.
+        
+       <h1>3: Adequate Sleep::</h1>Aim for 7-9 hours of sleep per night to allow your body to rest and rejuvenate..
+        
+       <h1>4. Stress Management:</h1>Practice relaxation techniques such as deep breathing, meditation, or yoga.
+       Engage in hobbies and activities that bring you joy and relaxation.
+       
+       <h1>6. Avoid Harmful Substances:</h1>Limit alcohol consumption and avoid smoking or recreational drug use.
+
+       <h1>7. Regular Health Check-ups:</h1>Schedule regular check-ups with your healthcare provider for screenings and vaccinations.
+       Monitor your blood pressure, cholesterol levels, and other health markers regularly.
+
+       <h1>8. Mental Health:</h1>Prioritize your mental health. Seek help if you are feeling persistently sad, anxious, or overwhelmed.
+       Talk to friends, family, or a mental health professional if you need support.
+
+       <h1>9. Practice Good Hygiene:</h1>Wash your hands frequently to prevent the spread of germs.
+       Maintain good oral hygiene by brushing and flossing your teeth regularly.
+
+       <h1>10. Safety Measures:</h1>Use seat belts and helmets to prevent accidents and injuries.
+       Follow safety guidelines at home and work to avoid accidents.
+
+       <h1>11. Limit Screen Time:</h1>Reduce the time spent on electronic devices, especially before bedtime.<br>
+       Take breaks during prolonged screen use to prevent eye strain.
+       Stay Socially Connected:
+       <h1>12. Continuous Learning:</h1>Stay Informed: Keep yourself updated about health issues, new research, and best practices for a healthy lifestyle.<br><br>
+       Seek Professional Help: If you have specific health concerns or goals, consult healthcare professionals, nutritionists, or fitness trainers for personalized guidance.
+    
+    </section>
+</section> 
+
+    <section id="appointments">
+        <div class="search-container1">
+            <h2>[Book an Appointmen]</h2>
+            <div class="search-container1">
+                <input type="text" id="search-box" placeholder="Search for doctors...">
+                <div id="specialties-list1" class="specialties-list1"></div>
+        </div>   
+            <div class="doctor-list1" id="doctor-list1"></div>
+            <div class="appointment-form2" id="appointment-form2"></div>
+            <div class="notification1" id="notification1"></div>
+    </section> 
+
+    <section id="Health blog">
+        <main>
+            <h1>Health Blog</h1>
+            <button id="openModalBtn">Write a Blog Post</button><br><br>
+        </main>
+    
+        <div class="blog-posts" id="blogPosts"><br><br>
+            <!-- Blog posts will be dynamically added here -->
+        </div>
+    
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h2>Write a Blog Post</h2>
+                <label for="blogTitle">Title:</label>
+                <input type="text" id="blogTitle" required><br><br>
+                <label for="blogContent">Content:</label>
+                <textarea id="blogContent" required></textarea><br>
+                <button id="submitPostBtn">Publish</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Reviews">
+        <div class="table-container">
+            <h2>Doctor Reviews</h2>
+            <table id="reviews-table">
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Doctor Name</th>
+                    <th>Doctor Specialty</th>
+                    <th>Provide Review</th>
+                    <th>Review Given</th>
+                    </tr>
+                    <tr>
+                    <td>1</td>
+                    <td>Dr. Suhana</td>
+                    <td>BHMS</td>
+                    <td><button onclick="openReviewForm(1)">Give Review</button></td>
+                    <td id="review-1"></td>
+                    </tr>
+                    <td>2</td>
+                    <td>Dr. Sana</td>
+                    <td>BDS</td>
+                    <td><button onclick="openReviewForm(2)">Give Review</button></td>
+                    <td id="review-2"></td>
+                </tr>
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+        
+            <div class="review-form" id="review-form">
+                <h2>Review Form</h2>
+                <label for="patient-name">Patient's Name:</label>
+                <input type="text" id="patient-name" required><br><br>
+                <label for="patient-review">Review:</label>
+                <textarea id="patient-review" required></textarea><br><br>
+                <button onclick="submitReview()">Submit</button>
+            </div>
+    </section>
+
+<section>
+    <!-- Add these divs for login and signup modals -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeLoginModalBtn">&times;</span>
+        <h2>Login</h2>
+        <form id="loginFormContent">
+            <!-- Login form fields -->
+        </form>
+        <button id="loginBtn">Login</button>
+    </div>
+</div>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignupModalBtn">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupFormContent">
+            <!-- Signup form fields -->
+        </form>
+        <button id="signupBtn">Sign Up</button>
+    </div>
+</div>
+
+</section>
+</section>
+
+    <script src="medical.js"></script>
+
+
+    <footer>
+        <h3> Stay Healthy Applications</h3>
+        <h4>@ 2023 My Website. All rights reserved.</h4>
+
+    </footer>
+</body>

@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+</head>
+<body>
+    <div class="box">Box1 and there information</div>
+    <div class="box">box2 and there infromation</div>
+    <div class="box">box3 and there infromation</div>
+</body>
+</html>
+
+nav,ul,li{
+    text-align: right;
+    background-color: #ffa9a9;
+    color: rgb(0, 255, 17);
+    border: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 0px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-text-fill-color: #000000;
+}
+
+const getStartedLink = document.getElementById("getStartedLink");
+getStartedLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    
+});
+
+
+footer{
+    background-color: #333;
+    color: white;
+    -webkit-text-fill-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    height:70px;
+    padding: 15px;
+    margin-top: 300px; 
+    position: statfooter;
+}
+   -->
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   
+   <head>
+       <!-- Meta tags, title, and CSS links go here -->
+   </head>
+   
+   <body>
+       <section id="Home">
+           <!-- Your existing Home section content goes here -->
+   
+           <nav>
+               <ul>
+                   <li><a href="#GetStarted" id="getStartedLink">Get Started</a></li>
+               </ul>
+           </nav>
+       </section>
+   
+       <section id="GetStartedSection" style="display: none;">
+           <h2>Welcome to Get Started Section!</h2>
+           <p>This is the new section that opens when you click "Get Started" button.</p>
+       </section>
+   
+       <script src="get_started.js"></script>
+   </body>
+   
+   </html>
+   
+
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayHealthy</title>
+    <link rel="stylesheet" href="Medical.css">
+</head>
+
+    <header>
+        <div class="logo">Stay Healthy Services</div>
+    <nav>
+        <ul>    
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#Health blog">Health blog</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+        </ul>
+
+        <button id="loginbtn">Login</button>
+        <button id="signupbtn">Sign up</button>
+    </nav>
+</header>
+<body>
+<section id="Home">
+    <h2>Your Health<br>Our Responsibility</h2><br><br>
+    <p1>'Embrace the art of self care for a health mind and body the foundation of a vibrant life Wellness is not just a destination; it's a journey of mindful choices and daily transformations, nature
+        your health with love and watch it bloom into a beacon of joy and vitality'.</p1><br><br> 
+    <nav>
+        <ul>
+            <li><a href="#GetStarted" id="getStartedLink">Get Started</a></li>  
+        </ul>
+    </nav>
+</section>
+
+<section id="GetStartedsection" style="display: none;">
+    <h1>'Embrace the art of self care for a health mind and body the foundation of a vibrant life Wellness is not just a destination; it's a journey of mindful choices and daily transformations, nature your health with love and watch it bloom into a beacon of joy and vitality'.</h1>
+    <p>This is the new section that opens what you click "Get started" button</p>
+</section>
+
+    <section id="appointments">
+       <h1>Doctor list</h1>
+        fsdv dvvf dfv fs dAppointment sfdsfcheduling form will go here 
+        <section id="appointmentFormSection">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="tel" id="mobileNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" required>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Johnson">Dr. Johnson</option>
+                        <option value="Dr. Davis">Dr. Davis</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date:</label>
+                    <input type="date" id="appointmentDate" required>
+                </div>
+                <button type="button" onclick="saveAppointment()">Save Appointment</button>
+            </form>
+        </section>
+    
+        <section id="appointmentListSection">
+            <h2>Appointments</h2>
+            <ul id="appointmentList"></ul>
+        </section>
+   
+    </section> 
+    <section id="Health blog">
+       vfxfd dffdcc sfdc  <!-- Doctorvsdv listing will go here -->
+    </section>
+
+    <section id="Reviews">
+        fd fd vfd dfv <bv b !-- Feedback form will go here -->
+    </section>
+
+<section>
+    <div id="loginForm" class="form-container">
+        <h2>Login</h2>
+        <form id="loginFormContent">
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="signupForm" class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signupFormContent">
+            <div class="form-group">
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" required>
+            </div>
+            <div class="form-group">
+                <label for="signupLastName">Last Name:</label>
+                <input type="text" id="signupLastName" required>
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</section>
+</section>
+
+    <script src="medical.js"></script>
+    <!-- <script src="get_started.js"></script> -->
+
+
+    <footer>
+        <h3> Stay Healthy Applications</h3>
+        <h4>@ 2023 My Website. All rights reserved.</h4>
+
+    </footer>
+</body>
+
+
+
